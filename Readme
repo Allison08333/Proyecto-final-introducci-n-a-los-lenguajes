@@ -6,7 +6,7 @@ El objetivo fue integrar todas las habilidades aprendidas durante la materia, de
 
 La tienda combina HTML, CSS, JavaScript, objetos, arreglos, manejo del DOM, asincronía con fetch y Promesas, además del consumo de dos APIs públicas.
 
-🎯 Objetivo del Proyecto
+Objetivo del Proyecto
 
 Construir una aplicación web completa capaz de:
 
@@ -30,8 +30,8 @@ Se utiliza para validar usuarios e iniciar sesión dentro de la aplicación.
 Endpoint:
 https://dummyjson.com/auth/login
 
-🧱 Estructura del Proyecto
-📌 1. HTML y Estructura General
+ Estructura del Proyecto
+ 1. HTML y Estructura General
 
 El archivo index.html contiene la estructura semántica base de la aplicación, incluyendo:
 
@@ -41,7 +41,7 @@ Una sección dedicada al carrito de compras.
 
 Formulario de inicio de sesión.
 
-📌 2. Estilos (CSS)
+ 2. Estilos (CSS)
 
 En styles.css se implementó un diseño limpio, moderno y responsivo usando:
 
@@ -51,12 +51,12 @@ Tipografía legible.
 
 Tarjetas de productos con sombras, bordes y botones personalizados.
 
-📌 3. Lógica del Sistema (JavaScript)
+ 3. Lógica del Sistema (JavaScript)
 
 Toda la lógica se encuentra en script.js, incluyendo:
 
-🚀 Funciones Principales
-🔄 1. Petición Asíncrona (fetch)
+ Funciones Principales
+ 1. Petición Asíncrona (fetch)
 
 Al cargar la página:
 
@@ -108,7 +108,7 @@ Se realiza una petición POST a la API de DummyJSON.
 
 Si el login es correcto, se muestra la app y sus datos básicos (nombre, email, avatar, etc.).
 
-📌 Características Principales
+ Características Principales
 
 ✔ Productos dinámicos desde API
 ✔ Carrito totalmente funcional
@@ -119,7 +119,7 @@ Si el login es correcto, se muestra la app y sus datos básicos (nombre, email, 
 ✔ Código organizado y comentado
 ✔ Proyecto desplegado en GitHub Pages
 
-🖥️ Tecnologías Utilizadas
+ Tecnologías Utilizadas
 
 HTML5
 
