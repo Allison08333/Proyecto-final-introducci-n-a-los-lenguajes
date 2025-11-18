@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickShop - Tu Tienda en Línea</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Login -->
+    <div id="login-container">
+        <form id="login-form">
+            <h2> Bienvenido a QuickShop</h2>
+            <div class="form-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" placeholder="Ingresa tu usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+            </div>
+            <button type="submit" class="btn-login" id="btn-login">Iniciar Sesión</button>
+            <p class="error-message" id="error-message">Usuario o contraseña incorrectos</p>
+            <div class="info-message">
+                 <strong>Credenciales de prueba:</strong>
+                Usuario: <strong>emilys</strong><br>
+                Contraseña: <strong>emilyspass</strong>
+            </div>
+        </form>
+    </div>
+
+    <!-- App Principal esta oculto con un display none,se muestra despues de login exitoso-->
+    <div id="app">
+        <header>
+            <div class="header-content">
+                <h1> QuickShop </h1>
+                <div class="user-info">
+                    <img src="" alt="Avatar" class="user-avatar" id="user-avatar">
+                    <div class="user-details">
+                        <span class="user-name" id="user-name">Usuario</span>
+                        <span class="user-email" id="user-email">email@ejemplo.com</span>
+                    </div>
+                    <button class="btn-logout" id="btn-logout">Cerrar Sesión</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div id="catalogo-productos" class="loading">
+                    Cargando productos...
+                </div>
+            </section>
+
+            <aside id="carrito">
+                <h2> Carrito</h2>
+                <div id="carrito-items">
+                    <p class="carrito-vacio">Tu carrito está vacío</p>
+                </div>
+                <div id="carrito-total"></div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
