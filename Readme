@@ -1,0 +1,136 @@
+README – Proyecto Final: Tienda Online con API y Carrito de Compras
+ Descripción del Proyecto
+
+Este proyecto es una Web App funcional creada como trabajo final del curso de Introducción a los Lenguajes de Programación.
+El objetivo fue integrar todas las habilidades aprendidas durante la materia, desarrollando una tienda en línea donde los productos se cargan dinámicamente desde una API pública, y el usuario puede iniciar sesión y añadir elementos a un carrito de compras totalmente funcional.
+
+La tienda combina HTML, CSS, JavaScript, objetos, arreglos, manejo del DOM, asincronía con fetch y Promesas, además del consumo de dos APIs públicas.
+
+🎯 Objetivo del Proyecto
+
+Construir una aplicación web completa capaz de:
+
+Consumir datos reales desde una API pública.
+
+Renderizar productos en tiempo real.
+
+Gestionar un carrito de compras usando objetos y arreglos.
+
+Permitir el inicio de sesión con datos obtenidos desde otra API.
+
+Mantener una interfaz clara, moderna y responsiva.
+
+Desplegar la app en la nube mediante GitHub Pages.
+
+ APIs Utilizadas
+
+️ API de Inicio de Sesión — DummyJSON
+
+Se utiliza para validar usuarios e iniciar sesión dentro de la aplicación.
+Endpoint:
+https://dummyjson.com/auth/login
+
+🧱 Estructura del Proyecto
+📌 1. HTML y Estructura General
+
+El archivo index.html contiene la estructura semántica base de la aplicación, incluyendo:
+
+Un contenedor vacío donde se renderizan los productos dinámicamente.
+
+Una sección dedicada al carrito de compras.
+
+Formulario de inicio de sesión.
+
+📌 2. Estilos (CSS)
+
+En styles.css se implementó un diseño limpio, moderno y responsivo usando:
+
+Flexbox y CSS Grid para organizar productos en tarjetas.
+
+Tipografía legible.
+
+Tarjetas de productos con sombras, bordes y botones personalizados.
+
+📌 3. Lógica del Sistema (JavaScript)
+
+Toda la lógica se encuentra en script.js, incluyendo:
+
+🚀 Funciones Principales
+🔄 1. Petición Asíncrona (fetch)
+
+Al cargar la página:
+
+Se ejecuta un fetch() hacia la API de Fake Store.
+
+Se obtiene un arreglo de productos (JSON).
+
+Se recorren estos datos para renderizar tarjetas dinámicamente.
+
+Cada tarjeta contiene:
+
+Imagen
+
+Nombre del producto
+
+Precio
+
+Una descripción personalizada (creada por mí)
+
+Botón “Añadir al carrito”
+
+ 2. Carrito de Compras (Objetos + Arreglos)
+
+Se creó un objeto llamado carrito con:
+
+items: []
+
+agregarItem(producto)
+
+calcularTotal()
+
+renderizarCarrito()
+
+Cuando el usuario presiona Añadir al carrito:
+
+Se envía el producto al arreglo items.
+
+Se actualiza la sección del carrito en pantalla (sin recargar la página).
+
+Se recalcula el total automáticamente.
+
+ 3. Inicio de Sesión (DummyJSON)
+
+La aplicación incluye un formulario donde:
+
+El usuario ingresa su correo/usuario y contraseña.
+
+Se realiza una petición POST a la API de DummyJSON.
+
+Si el login es correcto, se muestra la app y sus datos básicos (nombre, email, avatar, etc.).
+
+📌 Características Principales
+
+✔ Productos dinámicos desde API
+✔ Carrito totalmente funcional
+✔ Inicio de sesión real con API
+✔ Descripciones personalizadas
+✔ Renderizado dinámico de elementos
+✔ Interfaz responsiva
+✔ Código organizado y comentado
+✔ Proyecto desplegado en GitHub Pages
+
+🖥️ Tecnologías Utilizadas
+
+HTML5
+
+CSS3
+
+JavaScript
+
+Fetch API
+
+Promesas
+
+Git & GitHub
+
+GitHub Pages
